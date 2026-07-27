@@ -362,6 +362,31 @@ section { padding: 92px 0; }
 
 .section-alt { background: var(--paper-2); }
 
+/* ---------- Filter category sub-nav ---------- */
+.filt-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: -8px;
+}
+.filt-subnav a {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 9px 16px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.filt-subnav a:hover {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-wash);
+}
+
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
@@ -877,6 +902,7 @@ html[dir="rtl"] .badge-row span,
 html[dir="rtl"] .material-tabs button,
 html[dir="rtl"] .viewer-hint,
 html[dir="rtl"] .viewer-note,
+html[dir="rtl"] .filt-subnav a,
 html[dir="rtl"] .pressure-strip div span {
   text-transform: none;
   letter-spacing: 0;
