@@ -17,7 +17,7 @@
   function detectInitialLang() {
     const stored = localStorage.getItem("gm_lang");
     if (stored === "en" || stored === "ar") return stored;
-    return "ar";
+    return "en";
   }
 
   let currentLang = "en";
